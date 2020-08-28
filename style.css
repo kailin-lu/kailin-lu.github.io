@@ -1,14 +1,38 @@
 h1 {
     font-family: verdana;
-    font-size: 40px;
 }
 
-h1.about {
-    color: gray;
+p {
+    font-family: monospace;
+    font-size: 1.3em;
 }
 
-p.about {
-    font-size: 20px;
-    color: black;
+div {
+  padding-top: 1em;
+  padding-right: 0.5em;
+  padding-bottom: 0.2em;
+  padding-left: 1.5em;
 }
 
+.row {
+    display: flex;
+}
+
+.column {
+    float: left;
+    width: 75%;
+}
+
+/* Reponsive layout - see https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
