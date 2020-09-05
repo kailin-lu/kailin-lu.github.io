@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     scroll-behavior: smooth;
-    background: url(imgs/background.svg);
+    background: url(imgs/background.svg);  /* https://vectr.com/tmp/d28mrq5RD/c1teotfPAR */
     background-position: center;
     background-size: cover;
 }
@@ -39,9 +39,20 @@ a:link.link-page, a:visited.link-page {
     border-bottom: dashed 1px #778689;
 }
 
+a:link.link-card, a:visited.link-card {
+    color: #778689;
+    text-decoration: none;
+    border-bottom: dashed 1px #778689;
+}
+
+
 
 a:hover.link-page {
     color: #778689;
+}
+
+a:hover.link-card {
+    color: #033d44;
 }
 
 a:hover {
@@ -54,8 +65,9 @@ a:active.link-page {
 }
 
 .card {
-    border: #778689;
     border-radius: 1em;
+    border: 1px dashed #033d44;
+    background-color: white;
     display: flex;
     flex-direction: row;
     min-width: 80vw;
@@ -63,19 +75,13 @@ a:active.link-page {
 
 .column.title {
     padding-top: 0;
+    font-weight: bold;
 }
 
 .column.content {
     padding-left: 1.5em;
 }
 
-
-#footer {
-    text-align: center;
-    bottom: 0;
-    position: absolute-center;
-    height: 0.5em;
-}
 
 .box.projects {
 }
