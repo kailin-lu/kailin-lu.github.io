@@ -1,9 +1,22 @@
+html, body {
+    margin: 0;
+    scroll-behavior: smooth;
+    background: url(imgs/background.svg);
+    background-position: center;
+    background-size: cover;
+}
+
 h1 {
     font-size: 2.1em;
     font-family: verdana;
 }
 
-p {
+h2 {
+    font-size: 1.8em;
+    font-family: verdana;
+}
+
+p, li {
     font-family: monospace;
     font-size: 1.3em;
 }
@@ -15,6 +28,48 @@ div {
   padding-left: 1.5em;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:link.link-page, a:visited.link-page {
+    color: black;
+    text-decoration: none;
+    border-bottom: dashed 1px #778689;
+}
+
+
+a:hover.link-page {
+    color: #778689;
+}
+
+a:hover {
+    color: #778689;
+}
+
+
+a:active.link-page {
+    font-size: 1.1em;
+}
+
+.card {
+    border: #778689;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    min-width: 80vw;
+}
+
+.column.title {
+    padding-top: 0;
+}
+
+.column.content {
+    padding-left: 1.5em;
+}
+
+
 #footer {
     text-align: center;
     bottom: 0;
@@ -22,8 +77,20 @@ div {
     height: 0.5em;
 }
 
+.box.projects {
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
 .row {
     display: flex;
+    max-height: 100%;
 }
 
 .column {
